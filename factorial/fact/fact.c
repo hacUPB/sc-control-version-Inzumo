@@ -13,10 +13,9 @@ int main(int argc, char *argv[]) {
     if(number < 0)
     {
         fprintf(stderr,"The number must be greater than or equal to zero\n");
-        retun(1);
+        return(1);
     }
     /*Implement the function that calculates the factorial of the input argument*/
-
         int factorial = 1;
     for (int i = 1; i <= number; i++) {
         factorial *= i;
